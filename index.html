@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio | Desarrollador Full Stack</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">MiPortafolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="inicio"
+      class="bg-primary text-white py-5"
+      style="margin-top: 56px; min-height: 100vh"
+    >
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-1 fw-bold">Luis Gámez</h1>
+            <h2 class="display-6">Desarrollador Java Full Stack</h2>
+            <p class="lead mt-4">
+              Apasionado por crear soluciones web elegantes y eficientes.
+              Especializado en desarrollo backend con Java y Spring Boot, con
+              experiencia en frontend moderno y bases de datos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="py-5">
+      <div class="container">
+        <h2 class="display-4 fw-bold mb-5">Sobre mí</h2>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
+              alt="Workspace"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p class="lead">
+              Soy un desarrollador Full Stack apasionado por la tecnología y el
+              aprendizaje continuo. Mi objetivo es crear aplicaciones web
+              robustas y escalables que aporten valor real a los usuarios.
+            </p>
+
+            <h4 class="mt-4">Formación Académica:</h4>
+            <ul>
+              <li>Bootcamp Full Stack Java - Generation México (2026)</li>
+              <li>
+                Ingeniería en Sistemas Computacionales - Universidad Tecnológica
+                (2019-2023)
+              </li>
+            </ul>
+
+            <h4 class="mt-4">Certificaciones:</h4>
+            <ul>
+              <li>Oracle Certified Associate, Java SE 8 Programmer</li>
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>Responsive Web Design - freeCodeCamp</li>
+            </ul>
+
+            <h4 class="mt-4">Tecnologías que domino:</h4>
+            <ul>
+              <li>Backend: Java, Spring Boot, Spring Security, Hibernate</li>
+              <li>Frontend: HTML5, CSS3, JavaScript, Bootstrap, React</li>
+              <li>Bases de datos: MySQL, PostgreSQL, MongoDB</li>
+              <li>Herramientas: Git, Docker, Maven, Postman</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="display-4 fw-bold mb-5 text-center">Proyectos Destacados</h2>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=400&fit=crop"
+                class="card-img-top"
+                alt="Ecommerce"
+              />
+              <div class="card-body">
+                <h5 class="card-title">E-Commerce Platform</h5>
+                <p class="card-text">
+                  Plataforma de comercio electrónico completa con carrito de
+                  compras, sistema de pagos integrado y panel de administración.
+                  Incluye autenticación segura y gestión de inventario en tiempo
+                  real.
+                </p>
+                <div>
+                  <span class="badge bg-primary">Java</span>
+                  <span class="badge bg-primary">Spring Boot</span>
+                  <span class="badge bg-primary">MySQL</span>
+                  <span class="badge bg-primary">React</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop"
+                alt="Task Manager"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Task Management System</h5>
+                <p class="card-text">
+                  Sistema de gestión de tareas y proyectos con funcionalidades
+                  colaborativas. Permite asignación de tareas, seguimiento de
+                  progreso y notificaciones en tiempo real mediante WebSockets.
+                </p>
+                <div>
+                  <span class="badge bg-primary">Spring Boot</span>
+                  <span class="badge bg-primary">WebSocket</span>
+                  <span class="badge bg-primary">PostgreSQL</span>
+                  <span class="badge bg-primary">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
+                alt="API REST"
+              />
+              <div class="card-body">
+                <h5 class="card-title">RESTful API Banking</h5>
+                <p class="card-text">
+                  API REST para sistema bancario con operaciones CRUD,
+                  transferencias entre cuentas, historial de transacciones y
+                  seguridad robusta mediante JWT. Documentación completa con
+                  Swagger.
+                </p>
+                <div>
+                  <span class="badge bg-primary">Java</span>
+                  <span class="badge bg-primary">Spring Security</span>
+                  <span class="badge bg-primary">JWT</span>
+                  <span class="badge bg-primary">Swagger</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="display-4 fw-bold mb-5 text-center">Contacto</h2>
+
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Tu nombre completo"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  rows="5"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="bi bi-send me-2"></i>Enviar Mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="mb-3">
+          <a href="https://github.com" class="text-white me-3" target="_blank">
+            <i class="bi bi-github fs-3"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            class="text-white me-3"
+            target="_blank"
+          >
+            <i class="bi bi-linkedin fs-3"></i>
+          </a>
+          <a href="https://twitter.com" class="text-white me-3" target="_blank">
+            <i class="bi bi-twitter fs-3"></i>
+          </a>
+          <a href="mailto:correo@ejemplo.com" class="text-white">
+            <i class="bi bi-envelope fs-3"></i>
+          </a>
+        </div>
+        <p class="mb-0">
+          &copy; 2026 Luis Gámez - Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

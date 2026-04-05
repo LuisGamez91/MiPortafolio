@@ -3,7 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luis Gámez | Desarrollador Full Stack</title>
+    <title>Luis Gamez | Desarrollador Full Stack</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Luis Alan Gamez Monjarrez - Desarrollador Java Full Stack Jr con experiencia en análisis, diseño e implementación de soluciones empresariales."
+    />
+    <meta
+      name="keywords"
+      content="desarrollador java, full stack, C#, SQL, .NET, programador monterrey"
+    />
+
+    <!-- Preconnect to external resources for faster loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,9 +30,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#inicio">Luis Gámez</a>
+        <a class="navbar-brand fw-bold" href="#inicio">
+          <span class="text-gradient">LG</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,170 +55,610 @@
             <li class="nav-item">
               <a class="nav-link" href="#sobre-mi">Sobre mí</a>
             </li>
-            <!--
             <li class="nav-item">
-              <a class="nav-link" href="#mi-historia">Mi Historia</a>
-            </li>-->
+              <a class="nav-link" href="#formacion">Formación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#irl">IRL</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Cambiar tema"
+              >
+                <span class="toggle-circle"></span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="music-toggle"
+                id="playerToggle"
+                aria-label="Toggle music player"
+              >
+                <i class="bi bi-music-note-beamed"></i>
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section
-      id="inicio"
-      class="bg-primary text-white py-5"
-      style="margin-top: 56px; min-height: 100vh"
-    >
-      <div class="container h-100 d-flex align-items-center">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="display-1 fw-bold">Luis Alan Gámez Monjarrez</h1>
-            <h2 class="display-6">Desarrollador Java Full Stack</h2>
-            <p class="lead mt-4">
-              Apasionado por crear soluciones web elegantes y eficientes.
-              Especializado en desarrollo backend con Java y Spring Boot, con
-              experiencia en frontend moderno y bases de datos.
-            </p>
-            <div class="mt-4">
-              <a href="#sobre-mi" class="btn btn-light btn-lg me-3">
-                <i class="bi bi-book me-2"></i>Conoce mi historia
-              </a>
-              <a href="#proyectos" class="btn btn-outline-light btn-lg">
-                Ver proyectos
-              </a>
-              <div class="WIP_container">
-                <div class="WIP">THIS IS A WIP!</div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-background"></div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8">
+            <div class="hero-content">
+              <h1 class="hero-title fade-in-up">
+                Hola, soy <span class="text-gradient">Luis Gamez</span>
+              </h1>
+              <h2 class="hero-subtitle fade-in-up delay-1">
+                Desarrollador Java Full Stack Jr
+              </h2>
+              <p class="hero-description fade-in-up delay-2">
+                Desarrollador de software con experiencia en análisis, diseño e
+                implementación de soluciones que optimizan procesos
+                empresariales. Enfoque analítico, alta adaptabilidad y
+                comprometido con la entrega de resultados de calidad.
+              </p>
+              <div class="hero-buttons fade-in-up delay-3">
+                <a href="#proyectos" class="btn btn-primary btn-lg">
+                  <i class="bi bi-code-slash me-2"></i>Ver Proyectos
+                </a>
+                <a href="#contacto" class="btn btn-outline-light btn-lg">
+                  <i class="bi bi-envelope me-2"></i>Contactar
+                </a>
               </div>
+              <div class="social-links fade-in-up delay-4">
+                <a
+                  href="https://github.com/LuisGamez91"
+                  target="_blank"
+                  class="social-link"
+                  rel="noopener"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/luisgamez91/"
+                  target="_blank"
+                  class="social-link"
+                  rel="noopener"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:luis.gamez91@hotmail.com" class="social-link">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#sobre-mi">
+          <i class="bi bi-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Sobre mí</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="about-image-wrapper">
+              <img
+                data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
+                alt="Workspace"
+                class="img-fluid rounded-4 shadow-lg lazy-load"
+                loading="lazy"
+              />
+              <div class="about-image-overlay"></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-content">
+              <p class="lead mb-4">
+                Soy un desarrollador Full Stack con sede en Monterrey, Nuevo
+                León. Mi pasión es crear soluciones tecnológicas eficientes que
+                resuelvan problemas reales. Me caracterizo por mi pensamiento
+                lógico, atención meticulosa al detalle y capacidad de
+                aprendizaje autodidacta.
+              </p>
+
+              <div class="info-card mb-4">
+                <h4 class="info-title">
+                  <i class="bi bi-person-badge me-2"></i>
+                  Perfil Profesional
+                </h4>
+                <p class="mb-0">
+                  Desarrollador de software con experiencia en análisis, diseño
+                  e implementación de soluciones que optimizan procesos
+                  empresariales. De pensamiento lógico, enfoque analítico y alta
+                  adaptabilidad a nuevos entornos, lenguajes y herramientas.
+                  Autodidacta, comprometido con la mejora continua y la entrega
+                  de resultados de calidad.
+                </p>
+              </div>
+
+              <div class="info-card mb-4">
+                <h4 class="info-title">
+                  <i class="bi bi-geo-alt-fill me-2"></i>
+                  Ubicación & Disponibilidad
+                </h4>
+                <ul class="info-list">
+                  <li>Monterrey, Nuevo León, México</li>
+                  <li>Dispuesto a reubicación</li>
+                  <li>Disponible para trabajo remoto</li>
+                </ul>
+              </div>
+
+              <a href="#contacto" class="btn btn-primary">
+                <i class="bi bi-chat-dots me-2"></i>Hablemos
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="sobre-mi" class="py-5">
+    <!-- Education Section -->
+    <section id="formacion" class="section-padding section-alt">
       <div class="container">
-        <h2 class="display-4 fw-bold mb-5">Sobre mí</h2>
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
-              alt="Workspace"
-              class="img-fluid rounded"
-            />
-          </div>
-          <div class="col-lg-6">
-            <p class="lead">
-              Soy un desarrollador Full Stack apasionado por la tecnología y el
-              aprendizaje continuo. Mi objetivo es crear aplicaciones web
-              robustas y escalables que aporten valor real a los usuarios.
-            </p>
-
-            <h4 class="mt-4">Formación Académica:</h4>
-            <ul>
-              <li>Bootcamp Full Stack Java - Generation México (2026)</li>
-              <li>
-                Ingeniería en Sistemas Computacionales - Universidad Tecnológica
-                (2019-2023)
-              </li>
-            </ul>
-
-            <h4 class="mt-4">Certificaciones:</h4>
-            <ul>
-              <li>Oracle Certified Associate, Java SE 8 Programmer</li>
-              <li>AWS Certified Cloud Practitioner</li>
-              <li>Responsive Web Design - freeCodeCamp</li>
-            </ul>
-
-            <h4 class="mt-4">Tecnologías que domino:</h4>
-            <ul>
-              <li>Backend: Java, Spring Boot, Spring Security, Hibernate</li>
-              <li>Frontend: HTML5, CSS3, JavaScript, Bootstrap, React</li>
-              <li>Bases de datos: MySQL, PostgreSQL, MongoDB</li>
-              <li>Herramientas: Git, Docker, Maven, Postman</li>
-            </ul>
-          </div>
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Formación Académica</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Educación y certificaciones profesionales
+          </p>
         </div>
-      </div>
-    </section>
-
-    <section id="proyectos" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="display-4 fw-bold mb-5 text-center">Proyectos Destacados</h2>
 
         <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h4 class="education-title">
+                Bootcamp Desarrollador Java Full Stack Jr.
+              </h4>
+              <p class="education-institution">Generation México</p>
+              <p class="education-date">
+                Diciembre 2025 - Marzo 2026 (En Curso)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h4 class="education-title">
+                Ingeniería en Administración de Sistemas
+              </h4>
+              <p class="education-institution">
+                Universidad Metropolitana de Monterrey
+              </p>
+              <p class="education-date">Enero 2018 - Agosto 2021 (Titulado)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-12">
+            <h4 class="text-center mb-4">Certificaciones & Cursos</h4>
+          </div>
+          <div class="col-md-4">
+            <div class="certification-card">
+              <i class="bi bi-patch-check-fill"></i>
+              <h5>Introducción a Java</h5>
+              <p>Accenture (2026)</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="certification-card">
+              <i class="bi bi-patch-check-fill"></i>
+              <h5>Fundamentos de Power BI</h5>
+              <p>Santander Open Academy (2026)</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="certification-card">
+              <i class="bi bi-translate"></i>
+              <h5>Inglés - Nivel C2</h5>
+              <p>Avanzado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Frontend -->
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>Frontend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">React</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h4>Backend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">.NET</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">API REST</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <h4>Bases de Datos</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Modelado de Datos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h4>Herramientas</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Visual Studio</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Eclipse</span>
+                <span class="skill-tag">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">Habilidades Blandas</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="soft-skill">
+              <i class="bi bi-lightbulb-fill"></i>
+              <span>Aprendizaje autodidacta exponencial</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="soft-skill">
+              <i class="bi bi-graph-up"></i>
+              <span>Reconocimiento de patrones</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="soft-skill">
+              <i class="bi bi-eye-fill"></i>
+              <span>Atención meticulosa al detalle</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="soft-skill">
+              <i class="bi bi-people-fill"></i>
+              <span>Comunicación empática y adaptativa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Experiencia Laboral</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Mi trayectoria profesional</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Neitek Innovations -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="timeline-title">Consultor de Varicent ICM</h4>
+                <span class="timeline-company">Neitek Innovations</span>
+                <span class="timeline-date">Agosto 2024 - Agosto 2025</span>
+              </div>
+              <ul class="timeline-duties">
+                <li>
+                  Participé en la migración de instalaciones locales a la nube,
+                  mejorando el rendimiento del sistema y reduciendo costos de
+                  infraestructura
+                </li>
+                <li>
+                  Configuré y mantuve el entorno de Varicent ICM conforme a
+                  requerimientos del negocio
+                </li>
+                <li>
+                  Generé y optimicé consultas SQL avanzadas (SQL Server y
+                  PostgreSQL) para reportes analíticos
+                </li>
+                <li>
+                  Administré usuarios, roles y permisos, garantizando la
+                  integridad y seguridad de la información
+                </li>
+                <li>
+                  Coordiné con equipos internos y proveedores externos para
+                  asegurar entregas funcionales
+                </li>
+                <li>
+                  Brindé soporte técnico y funcional, resolviendo incidencias y
+                  optimizando la operación diaria
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="badge">SQL Server</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Cloud Migration</span>
+                <span class="badge">Varicent ICM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Freelance Project -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="timeline-title">Desarrollador de Software</h4>
+                <span class="timeline-company"
+                  >Freelance - Software de Gestión Empresarial</span
+                >
+                <span class="timeline-date">Abril 2023 - Agosto 2024</span>
+              </div>
+              <ul class="timeline-duties">
+                <li>
+                  Analicé requerimientos y diseñé una solución a medida para la
+                  gestión empresarial de un negocio
+                </li>
+                <li>
+                  Desarrollé una aplicación de escritorio en .NET utilizando C#,
+                  WPF y SQL Server, aplicando el patrón MVVM
+                </li>
+                <li>
+                  Construí y optimicé procedimientos almacenados y vistas para
+                  mejorar integridad y rendimiento
+                </li>
+                <li>
+                  Desarrollé módulos para órdenes de compra, control de
+                  inventarios, gestión de clientes, automatizando procesos y
+                  reduciendo tiempos en tareas manuales en más de un 70%
+                </li>
+                <li>
+                  Diseñé interfaces gráficas para reportes exportables a Excel o
+                  PDF
+                </li>
+                <li>
+                  Implementé autenticación, control de acceso por roles y
+                  registro de eventos para diagnóstico
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="badge">C#</span>
+                <span class="badge">.NET</span>
+                <span class="badge">WPF</span>
+                <span class="badge">SQL Server</span>
+                <span class="badge">MVVM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TCS -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="timeline-title">IT Trainee</h4>
+                <span class="timeline-company">Tata Consultancy Services</span>
+                <span class="timeline-date">Junio 2022 - Noviembre 2022</span>
+              </div>
+              <ul class="timeline-duties">
+                <li>
+                  Apoyé a usuarios en los módulos de compras y ventas del ERP
+                  QAD para cadena de suministros
+                </li>
+                <li>
+                  Participé en la resolución de problemas técnicos y la
+                  documentación de procesos
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="badge">ERP QAD</span>
+                <span class="badge">Soporte Técnico</span>
+                <span class="badge">Supply Chain</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Proyectos desarrollados durante el bootcamp de Generation
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1: ManoAMano -->
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100">
-              <img
-                src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=400&fit=crop"
-                class="card-img-top"
-                alt="Ecommerce"
-              />
-              <div class="card-body">
-                <h5 class="card-title">E-Commerce Platform</h5>
-                <p class="card-text">
-                  Plataforma de comercio electrónico completa con carrito de
-                  compras, sistema de pagos integrado y panel de administración.
-                  Incluye autenticación segura y gestión de inventario en tiempo
-                  real.
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  data-src="./assets/ManoAMano.jpg"
+                  alt="ManoAMano E-commerce"
+                  class="lazy-load"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Mauedy164/Mano_A_Mano_frontend"
+                    target="_blank"
+                    class="project-link"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h5 class="project-title">ManoAMano</h5>
+                <p class="project-description">
+                  Plataforma de e-commerce que ayuda al comercio local en
+                  México. Sistema completo con catálogo de productos, carrito de
+                  compras, gestión de usuarios y panel de administración.
+                  Proyecto colaborativo en equipo de 7 desarrolladores.
                 </p>
-                <div>
-                  <span class="badge bg-primary">Java</span>
-                  <span class="badge bg-primary">Spring Boot</span>
-                  <span class="badge bg-primary">MySQL</span>
-                  <span class="badge bg-primary">React</span>
+                <div class="project-tags">
+                  <span class="badge">Java</span>
+                  <span class="badge">Spring Boot</span>
+                  <span class="badge">MySQL</span>
+                  <span class="badge">Bootstrap</span>
+                  <span class="badge">MVC</span>
+                  <span class="badge">Gradle</span>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Project 2: ProActiveClub -->
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100">
-              <img
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop"
-                alt="Task Manager"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Task Management System</h5>
-                <p class="card-text">
-                  Sistema de gestión de tareas y proyectos con funcionalidades
-                  colaborativas. Permite asignación de tareas, seguimiento de
-                  progreso y notificaciones en tiempo real mediante WebSockets.
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  data-src="./assets/proActive.jpeg"
+                  alt="ProActiveClub Landing Page"
+                  class="lazy-load"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/GabrielaEsparza/1er-Hackathon-tienda-deportiva"
+                    target="_blank"
+                    class="project-link"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h5 class="project-title">ProActiveClub</h5>
+                <p class="project-description">
+                  Landing page para una tienda deportiva, desarrollada como
+                  parte de un hackatón. Diseño responsivo y atractivo enfocado
+                  en la experiencia del usuario para promover productos
+                  deportivos.
                 </p>
-                <div>
-                  <span class="badge bg-primary">Spring Boot</span>
-                  <span class="badge bg-primary">WebSocket</span>
-                  <span class="badge bg-primary">PostgreSQL</span>
-                  <span class="badge bg-primary">Bootstrap</span>
+                <div class="project-tags">
+                  <span class="badge">HTML</span>
+                  <span class="badge">CSS</span>
+                  <span class="badge">JavaScript</span>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Project 3: Agenda Telefónica -->
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
-                alt="API REST"
-              />
-              <div class="card-body">
-                <h5 class="card-title">RESTful API Banking</h5>
-                <p class="card-text">
-                  API REST para sistema bancario con operaciones CRUD,
-                  transferencias entre cuentas, historial de transacciones y
-                  seguridad robusta mediante JWT. Documentación completa con
-                  Swagger.
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  data-src="./assets/Agenda.jpg"
+                  alt="Agenda Telefónica"
+                  class="lazy-load"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/GabrielaEsparza/Hackathon2"
+                    target="_blank"
+                    class="project-link"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h5 class="project-title">Agenda Telefónica</h5>
+                <p class="project-description">
+                  Aplicación de consola para administrar contactos telefónicos.
+                  Desarrollada como parte de un hackatón aplicando principios de
+                  POO: clases, encapsulamiento, abstracción y gestión de
+                  colecciones.
                 </p>
-                <div>
-                  <span class="badge bg-primary">Java</span>
-                  <span class="badge bg-primary">Spring Security</span>
-                  <span class="badge bg-primary">JWT</span>
-                  <span class="badge bg-primary">Swagger</span>
+                <div class="project-tags">
+                  <span class="badge">Java</span>
+                  <span class="badge">POO</span>
                 </div>
               </div>
             </div>
@@ -209,84 +667,330 @@
       </div>
     </section>
 
-    <section id="contacto" class="py-5">
+    <!-- IRL Section -->
+    <section id="irl" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">IRL</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Intereses y pasatiempos que alimentan mi creatividad
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="irl-card">
+              <div class="irl-icon">
+                <i class="bi bi-controller"></i>
+              </div>
+              <h4>Desarrollo de Videojuegos y Juegos de Mesa</h4>
+              <p>
+                Crear experiencias interactivas combina programación, diseño de
+                sistemas y narrativa. Esta pasión me mantiene actualizado en
+                mecánicas de juego, lógica compleja y experiencia de usuario.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="irl-card">
+              <div class="irl-icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <h4>Creación Literaria</h4>
+              <p>
+                Actualmente trabajo en una serie de novelas que fusiona fantasía
+                y ciencia ficción: viajes en el tiempo, batallas entre dioses
+                antiguos y mortales, traiciones, amor, odio, vida sintética,
+                tecnócratas, hechiceros, de enemigos a aliados y secretos
+                oscuros por descubrir.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="irl-card">
+              <div class="irl-icon">
+                <i class="bi bi-puzzle-fill"></i>
+              </div>
+              <h4>Pensamiento Filosófico</h4>
+              <p>
+                El análisis filosófico fortalece mi capacidad de pensamiento
+                sistémico, permitiéndome abordar problemas complejos desde
+                múltiples perspectivas y encontrar soluciones innovadoras.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="irl-card">
+              <div class="irl-icon">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h4>Análisis Social</h4>
+              <p>
+                La crítica social desarrolla mi habilidad para identificar
+                problemas sistémicos y diseñar soluciones efectivas, una
+                competencia directamente transferible al desarrollo de software.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section-padding">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2 class="display-4 fw-bold mb-5 text-center">Contacto</h2>
+            <div class="section-header text-center mb-5">
+              <h2 class="section-title">Trabajemos Juntos</h2>
+              <div class="section-divider"></div>
+              <p class="section-subtitle">
+                ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él
+              </p>
+            </div>
 
-            <form>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  placeholder="Tu nombre completo"
-                  required
-                />
-              </div>
+            <div class="contact-form-wrapper">
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        placeholder="Tu nombre"
+                        required
+                      />
+                      <label for="nombre">
+                        <i class="bi bi-person me-2"></i>Nombre
+                      </label>
+                    </div>
+                  </div>
 
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="tu@email.com"
-                  required
-                />
-              </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="tu@email.com"
+                        required
+                      />
+                      <label for="email">
+                        <i class="bi bi-envelope me-2"></i>Correo Electrónico
+                      </label>
+                    </div>
+                  </div>
 
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea
-                  class="form-control"
-                  id="mensaje"
-                  rows="5"
-                  placeholder="Escribe tu mensaje aquí..."
-                  required
-                ></textarea>
-              </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="asunto"
+                        placeholder="Asunto"
+                        required
+                      />
+                      <label for="asunto">
+                        <i class="bi bi-chat-text me-2"></i>Asunto
+                      </label>
+                    </div>
+                  </div>
 
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg">
-                  <i class="bi bi-send me-2"></i>Enviar Mensaje
-                </button>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        placeholder="Tu mensaje"
+                        style="height: 150px"
+                        required
+                      ></textarea>
+                      <label for="mensaje">
+                        <i class="bi bi-pencil me-2"></i>Mensaje
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                      <i class="bi bi-send me-2"></i>Enviar Mensaje
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div id="formMessage" class="alert mt-4 d-none"></div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info mt-5">
+              <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                  <div class="contact-info-item">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <h5>Ubicación</h5>
+                    <p>Monterrey, Nuevo León</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="contact-info-item">
+                    <i class="bi bi-envelope-fill"></i>
+                    <h5>Email</h5>
+                    <p>
+                      <a href="mailto:luis.gamez91@hotmail.com"
+                        >luis.gamez91@hotmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="contact-info-item">
+                    <i class="bi bi-telephone-fill"></i>
+                    <h5>Teléfono</h5>
+                    <p><a href="tel:+528134135061">+52 81 3413 5061</a></p>
+                  </div>
+                </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-4">
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
-        <div class="mb-3">
-          <a href="https://github.com" class="text-white me-3" target="_blank">
-            <i class="bi bi-github fs-3"></i>
-          </a>
-          <a
-            href="https://linkedin.com"
-            class="text-white me-3"
-            target="_blank"
-          >
-            <i class="bi bi-linkedin fs-3"></i>
-          </a>
-          <a href="https://twitter.com" class="text-white me-3" target="_blank">
-            <i class="bi bi-twitter fs-3"></i>
-          </a>
-          <a href="mailto:correo@ejemplo.com" class="text-white">
-            <i class="bi bi-envelope fs-3"></i>
-          </a>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center mb-3">
+            <p class="mb-0">
+              &copy; 2026 Luis Alan Gamez Monjarrez. Todos los derechos
+              reservados.
+            </p>
+          </div>
+          <div class="col-12">
+            <div class="footer-social text-center">
+              <a
+                href="https://github.com/LuisGamez91"
+                target="_blank"
+                class="footer-link"
+                rel="noopener"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/luisgamez91/"
+                target="_blank"
+                class="footer-link"
+                rel="noopener"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="mailto:luis.gamez91@hotmail.com" class="footer-link">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <p class="mb-0">
-          &copy; 2026 Luis Alan Gámez Monjarrez - Todos los derechos reservados
-        </p>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./main.js"></script>
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+      <button
+        class="music-player-toggle"
+        id="playerToggle"
+        aria-label="Toggle music player"
+      >
+        <i class="bi bi-music-note-beamed"></i>
+      </button>
+
+      <div class="music-player-expanded" id="playerExpanded">
+        <div class="player-header">
+          <h5>Reproductor</h5>
+          <button class="player-close" id="playerClose">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+
+        <div class="now-playing">
+          <div class="track-info">
+            <div class="track-title" id="trackTitle">
+              Selecciona una canción
+            </div>
+            <div class="track-artist" id="trackArtist">---</div>
+          </div>
+          <div class="track-time">
+            <span id="currentTime">0:00</span> /
+            <span id="totalTime">0:00</span>
+          </div>
+        </div>
+
+        <div class="progress-container">
+          <input
+            type="range"
+            class="progress-bar"
+            id="progressBar"
+            min="0"
+            max="100"
+            value="0"
+          />
+        </div>
+
+        <div class="player-controls">
+          <button class="control-btn" id="shuffleBtn" aria-label="Shuffle">
+            <i class="bi bi-shuffle"></i>
+          </button>
+          <button class="control-btn" id="prevBtn" aria-label="Previous">
+            <i class="bi bi-skip-backward-fill"></i>
+          </button>
+          <button
+            class="control-btn play-btn"
+            id="playPauseBtn"
+            aria-label="Play/Pause"
+          >
+            <i class="bi bi-play-circle-fill"></i>
+          </button>
+          <button class="control-btn" id="nextBtn" aria-label="Next">
+            <i class="bi bi-skip-forward-fill"></i>
+          </button>
+          <button class="control-btn" id="repeatBtn" aria-label="Repeat">
+            <i class="bi bi-arrow-repeat"></i>
+          </button>
+        </div>
+
+        <div class="volume-container">
+          <i class="bi bi-volume-up"></i>
+          <input
+            type="range"
+            class="volume-slider"
+            id="volumeSlider"
+            min="0"
+            max="100"
+            value="30"
+          />
+          <span class="volume-value" id="volumeValue">30%</span>
+        </div>
+
+        <div class="playlist-header">
+          <h6>Playlist</h6>
+        </div>
+
+        <div class="playlist" id="playlist"></div>
+      </div>
+
+      <audio id="audioPlayer"></audio>
+    </div>
+
+    <!-- Scripts deferred for better performance -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="./main.js" defer></script>
   </body>
 </html>

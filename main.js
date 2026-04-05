@@ -230,9 +230,8 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 }
 
 // ====================
-// MP3
+// Music Player
 // ====================
-
 const musicPlayer = {
   playlist: [
     {
@@ -291,12 +290,9 @@ const musicPlayer = {
 
     this.audio.volume = 0.3;
 
-    this.audio.play().catch(() => {
-      console.log("Autoplay bloqueado - esperando interacción del usuario");
-    });
-    this.isPlaying = true;
-    this.playerToggle.classList.add("playing");
-    this.playPauseBtn.querySelector("i").className = "bi bi-pause-circle-fill";
+    this.isPlaying = false;
+    this.playerToggle.classList.remove("playing");
+    this.playPauseBtn.querySelector("i").className = "bi bi-play-circle-fill";
   },
 
   setupEventListeners() {
@@ -449,4 +445,15 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("musicPlayer")) {
     musicPlayer.init();
   }
+});
+
+document.addEventListener("click", function startMusic() {
+  if (musicPlayer.audio && musicPlayer.audio.paused) {
+    musicPlayer.audio.play().catch(() => {});
+    musicPlayer.isPlaying = true;
+    musicPlayer.playerToggle.classList.add("playing");
+    musicPlayer.playPauseBtn.querySelector("i").className =
+      "bi bi-pause-circle-fill";
+  }
+  document.removeEventListener("click", startMusic);
 });

@@ -1,6 +1,4 @@
-// ====================
-// Utility: Debounce Function
-// ====================
+// Utility: Debounce
 function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
@@ -13,9 +11,7 @@ function debounce(func, wait) {
   };
 }
 
-// ====================
 // Lazy Loading Images
-// ====================
 function lazyLoadImages() {
   const lazyImages = document.querySelectorAll(".lazy-load");
 
@@ -45,9 +41,7 @@ function lazyLoadImages() {
 
 document.addEventListener("DOMContentLoaded", lazyLoadImages);
 
-// ====================
 // Theme Toggle Functionality
-// ====================
 const themeToggle = document.getElementById("themeToggle");
 const html = document.documentElement;
 
@@ -69,9 +63,7 @@ if (themeToggle) {
   });
 }
 
-// ====================
 // Smooth Scroll for Navigation Links
-// ====================
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -94,9 +86,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// ====================
-// Navbar Background on Scroll (DEBOUNCED)
-// ====================
+// Navbar Background on Scroll (DEB'd)
 const handleNavbarScroll = debounce(function () {
   const navbar = document.querySelector(".navbar");
 
@@ -111,9 +101,7 @@ const handleNavbarScroll = debounce(function () {
 
 window.addEventListener("scroll", handleNavbarScroll, { passive: true });
 
-// ====================
-// Active Navigation Link (DEBOUNCED)
-// ====================
+// Active Navigation Link (DEB'd)
 const handleActiveLink = debounce(function () {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
@@ -140,9 +128,7 @@ const handleActiveLink = debounce(function () {
 
 window.addEventListener("scroll", handleActiveLink, { passive: true });
 
-// ====================
 // Contact Form Handling
-// ====================
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
@@ -181,9 +167,7 @@ if (contactForm) {
   });
 }
 
-// ====================
-// Scroll to Top Button (DEBOUNCED)
-// ====================
+// Scroll to Top Button (DEB'd)
 function createScrollToTopButton() {
   const button = document.createElement("button");
   button.innerHTML = '<i class="bi bi-arrow-up"></i>';
@@ -212,9 +196,7 @@ function createScrollToTopButton() {
 
 createScrollToTopButton();
 
-// ====================
 // Performance: Reduce Motion for Accessibility
-// ====================
 if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   document.documentElement.style.setProperty("scroll-behavior", "auto");
 
@@ -229,9 +211,7 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   document.head.appendChild(style);
 }
 
-// ====================
 // Music Player
-// ====================
 const musicPlayer = {
   playlist: [
     {
@@ -245,7 +225,7 @@ const musicPlayer = {
       src: "./music/OurFoes.mp3",
     },
     {
-      title: "Moonlight Sonata 1M",
+      title: "Moonlight Sonata M1",
       artist: "Beethoven",
       src: "./music/Moonlight.mp3",
     },
@@ -456,4 +436,32 @@ document.addEventListener("click", function startMusic() {
       "bi bi-pause-circle-fill";
   }
   document.removeEventListener("click", startMusic);
+});
+
+// EE
+let clickCount = 0;
+let clickTimer;
+
+document.querySelector(".navbar-brand").addEventListener("click", (e) => {
+  e.preventDefault();
+  clickCount++;
+
+  clearTimeout(clickTimer);
+
+  if (clickCount === 3) {
+    const secretSection = document.getElementById("secretSection");
+    secretSection.classList.remove("d-none");
+
+    setTimeout(() => {
+      const navbarHeight = document.querySelector(".navbar").offsetHeight;
+      const targetPosition = secretSection.offsetTop - navbarHeight;
+      window.scrollTo({ top: targetPosition, behavior: "smooth" });
+    }, 100);
+
+    clickCount = 0;
+  }
+
+  clickTimer = setTimeout(() => {
+    clickCount = 0;
+  }, 1000);
 });

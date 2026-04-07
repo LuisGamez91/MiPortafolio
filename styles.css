@@ -1094,7 +1094,9 @@ body {
 #secretSection h5,
 #secretSection h6,
 #secretSection p,
-#secretSection .lead {
+#secretSection .lead,
+#secretSection .mb-3,
+#secretSection .mb-4 {
   color: white !important;
 }
 

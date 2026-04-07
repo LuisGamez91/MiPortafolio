@@ -1,6 +1,4 @@
-/* ==================== */
 /* CSS Variables - Dark Mode (Default) */
-/* ==================== */
 :root {
   /* Purple Color Palette */
   --primary-color: #510251;
@@ -36,9 +34,7 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==================== */
 /* Light Mode Variables */
-/* ==================== */
 [data-theme="light"] {
   /* Light Mode Theme */
   --bg-primary: #fff;
@@ -56,23 +52,6 @@
 
   /* Effects */
   --glow-primary: 0 0 20px rgba(81, 2, 81, 0.3);
-}
-
-/* Language toggle display */
-[data-lang="en"] .lang-es {
-  display: none !important;
-}
-
-[data-lang="en"] .lang-en {
-  display: block !important;
-}
-
-[data-lang="es"] .lang-es {
-  display: block !important;
-}
-
-[data-lang="es"] .lang-en {
-  display: none !important;
 }
 
 /* ==================== */
@@ -116,9 +95,7 @@ body {
   padding: 100px 0;
 }
 
-/* ==================== */
 /* Lazy Loading Images */
-/* ==================== */
 .lazy-load {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -147,9 +124,7 @@ body {
   }
 }
 
-/* ==================== */
 /* Navigation */
-/* ==================== */
 .navbar {
   background: var(--bg-primary) !important;
   backdrop-filter: blur(10px);
@@ -263,9 +238,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ==================== */
 /* Hero Section */
-/* ==================== */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -491,9 +464,7 @@ body {
   }
 }
 
-/* ==================== */
 /* Section Headers */
-/* ==================== */
 .section-header {
   margin-bottom: 4rem;
 }
@@ -525,9 +496,7 @@ body {
   border-bottom: 1px solid rgba(81, 2, 81, 0.2);
 }
 
-/* ==================== */
 /* About Section */
-/* ==================== */
 .about-image-wrapper {
   position: relative;
   border-radius: 1rem;
@@ -615,9 +584,7 @@ body {
   font-weight: bold;
 }
 
-/* ==================== */
 /* Education Section */
-/* ==================== */
 .education-card {
   background: var(--bg-tertiary);
   padding: 2rem;
@@ -689,9 +656,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* ==================== */
 /* Skills Section */
-/* ==================== */
 .skill-category {
   background: var(--bg-tertiary);
   padding: 2rem;
@@ -773,9 +738,7 @@ body {
   font-size: 0.95rem;
 }
 
-/* ==================== */
 /* Experience Timeline */
-/* ==================== */
 .timeline {
   position: relative;
   padding: 2rem 0;
@@ -897,9 +860,7 @@ body {
   border-radius: 20px;
 }
 
-/* ==================== */
 /* Projects Section */
-/* ==================== */
 .project-card {
   background: var(--bg-tertiary);
   border-radius: 1rem;
@@ -1049,9 +1010,7 @@ body {
   border-radius: 20px;
 }
 
-/* ==================== */
 /* Contact Section */
-/* ==================== */
 .contact-form-wrapper {
   background: var(--bg-tertiary);
   padding: 3rem;
@@ -1128,9 +1087,18 @@ body {
   color: var(--primary-color);
 }
 
-/* ==================== */
+/* Secret Section - Forzar texto blanco siempre */
+#secretSection,
+#secretSection *,
+#secretSection h4,
+#secretSection h5,
+#secretSection h6,
+#secretSection p,
+#secretSection .lead {
+  color: white !important;
+}
+
 /* Footer */
-/* ==================== */
 .footer {
   background: var(--bg-secondary);
   color: var(--text-secondary);
@@ -1166,9 +1134,7 @@ body {
   box-shadow: var(--glow-primary);
 }
 
-/* ==================== */
 /* Scroll to Top Button */
-/* ==================== */
 .scroll-to-top {
   position: fixed;
   bottom: 30px;

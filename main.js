@@ -274,7 +274,7 @@ const musicPlayer = {
     this.renderPlaylist();
     this.loadTrack(0);
 
-    this.audio.volume = 0.3;
+    this.audio.volume = 0.2;
 
     this.isPlaying = false;
     this.playerToggle.classList.remove("playing");
